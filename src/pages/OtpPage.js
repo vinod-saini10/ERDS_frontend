@@ -37,7 +37,7 @@ export default function OtpPage() {
     setError("");
 
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/auth/verify-otp`, {
+      await api.post("/auth/verify-otp", {
         email,
         otp,
       });
