@@ -37,6 +37,7 @@ export default function OtpPage() {
     setError("");
 
     try {
+      console.log("OTP PAGE NEW BUILD");
       await api.post("/auth/verify-otp", {
         email,
         otp,
